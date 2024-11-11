@@ -79,6 +79,12 @@ app.post('/new', async function(req, res) {
 
 });
 
+// Demo Page
+app.get('/demo', function(req, res) {
+  res.render('pages/demo');
+});
+
+
 // Delete a post by id
 app.post("/delete/:id", async (req, res) => {
     const { id } = req.params;
